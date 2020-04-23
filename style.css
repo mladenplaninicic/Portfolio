@@ -1,0 +1,444 @@
+*, *::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(10, 25, 47);
+    color: rgb(136, 146, 176);
+}
+
+body {
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 50px;
+    position: absolute;
+    z-index: 100;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: rgba(204, 214, 246);
+    font-size: 16px;
+}
+
+.logo {
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid rgb(100, 255, 218);
+    padding: .5rem 1em;
+    font-size: 25px;
+    border-top-right-radius: 10px;
+}
+
+.logo:hover {
+    background-color: rgba(100, 255, 218, 0.07);
+}
+
+.header-navigation-nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.header-navigation-nav-links-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header-navigation-nav-links-list-item {
+    font-size: inherit;
+    margin: 0 10px;
+}
+
+.header-navigation-nav-links-list-item>a {
+    padding: 12px 10px;
+}
+
+a {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    display: list-item;
+}
+
+.header-navigation-nav-links-resume {
+    padding: 12px 10px;
+}
+
+li>a:hover {
+    color: rgb(100, 255, 218);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 100;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+.intro{
+    max-width: 1000px;
+    min-height: 100vh;
+    padding: 150px 0px;
+}
+
+.intro > h1 {
+    color: rgb(100, 255, 218);
+    font-size: 16px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
+    margin: 0px 0px 15px 3px;
+}
+
+.intro > h2 {
+    color: rgb(204, 214, 246);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.intro > h3 {
+    color: rgb(136, 146, 176);
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0px 0px 30px 3px;
+}
+
+.description{
+    max-width: 500px;
+}
+
+.description > p {
+    color: rgb(136, 146, 176);
+    font-size: 18px;
+    margin: 0px 0px 30px 3px;
+}
+
+.get-in-touch > a{
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 3px;
+    border: 1px solid rgb(100, 255, 218);
+    padding: 1rem 1em;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.get-in-touch > a:hover{
+    background-color: rgba(100, 255, 218, 0.07);
+}
+
+.about{
+    max-width: 1000px;
+    min-height: 100vh;
+    padding: 150px 0px;
+}
+
+.about > h3{
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    margin: 0px 0px 30px 3px;
+}
+
+.about-split{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-split > .about-description{
+    width: 50%;
+}
+
+.about-split > .about-photo{
+    width: 50%;
+}
+
+.about-description > .about-me > p {
+    color: rgb(136, 146, 176);
+    font-size: 18px;
+    margin: 0px 0px 20px 3px;
+}
+
+.about-split > .about-photo {
+    margin-left: 50px;
+}
+
+.tech-stack-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        overflow: hidden;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        list-style: none;
+}
+
+.tech-stack-list > li {
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-size: 13px;
+        color: rgb(136, 146, 176);
+}
+
+.tech-stack-list > li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(100, 255, 218);
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.experience{
+    max-width: 1000px;
+    min-height: 100vh;
+    padding: 150px 0px;
+}
+
+.experience > h3{
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    margin: 0px 0px 30px 3px;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: row;
+}
+
+.jobs-list{
+    display: block;
+    position: relative;
+    width: max-content;
+    z-index: 3;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.jobs-list > li > button {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 42px;
+        text-align: left;
+        white-space: nowrap;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-size: 13px;
+        color: rgb(100, 255, 218);
+        text-decoration: none;
+        padding: 0px 20px 2px;
+        border-left: 2px solid rgb(100, 255, 218);
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+        background-color: rgb(23, 42, 69);
+}
+
+.jobs-list > li > button:focus, button:hover, button:active {
+    color: rgb(100, 255, 218);
+    outline: 0px;
+}
+
+.job-description{
+    padding-top: 12px;
+    padding-left: 30px;
+}
+
+.job-description > h4 {
+    color: rgb(204, 214, 246);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.job-description > h4 > .position {
+    color: rgb(204, 214, 246);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.job-description > h4 > .company > span {
+    color: rgb(100, 255, 218);
+}
+
+.job-description > h4 > .company > a {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        color: rgb(100, 255, 218);
+        text-decoration: none;
+}
+
+.job-description > .time-period{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: rgb(168, 178, 209);
+    margin-bottom: 30px;
+}
+
+.job-description > .time-period{
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-size: 13px;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+        color: rgb(168, 178, 209);
+        margin-bottom: 30px;
+        margin-top: 20px;
+}
+
+.job-description > ul{
+    list-style: none;
+}
+
+.job-description > ul > li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.job-description ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(100, 255, 218);
+}
+
+.projects{
+    max-width: 1000px;
+    min-height: 100vh;
+    padding: 150px 0px;
+}
+
+.projects > h3{
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    margin: 0px 0px 30px 3px;
+}
+
+.projects > .project{
+    display: flex;
+    flex-direction: row;
+}
+
+.project > .image{
+    width: 50%;
+}
+
+.project > .description{
+    width: 50%;
+}
+
+
+
+.contact{
+    max-width: 1000px;
+    min-height: 100vh;
+    padding: 150px 0px;
+    text-align: center;
+}
+
+.contact > .desc {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact > h3{
+    font-size: 32px;
+    color: rgb(204, 214, 246);
+    margin: 0px 0px 30px 3px;
+}
+
+.contact > a {
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 3px;
+    border: 1px solid rgb(100, 255, 218);
+    padding: 1rem 1em;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.left {
+    width: 8%;
+}
+
+main {
+    width: 84%;
+}
+
+.right {
+    width: 8%;
+}
+
+.footer {
+    position: absolute;
+    z-index: 100;
+}
+
+.resume {
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    border: 1px solid rgb(100, 255, 218);
+    padding: .5rem .7em;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.resume:hover {
+    background-color: rgba(100, 255, 218, 0.07);
+}
+
+/* particles */
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 25, 47);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+}
