@@ -18,10 +18,10 @@
                 </div>
                 <div class="header-navigation-nav-links">
                     <ol class="header-navigation-nav-links-list">
-                        <li class="header-navigation-nav-links-list-item"><a href="">About</a></li>
-                        <li class="header-navigation-nav-links-list-item"><a href="">Experience</a></li>
-                        <li class="header-navigation-nav-links-list-item"><a href="">Work</a></li>
-                        <li class="header-navigation-nav-links-list-item"><a href="">Contact</a></li>
+                        <li class="header-navigation-nav-links-list-item"><a href="/#about">About</a></li>
+                        <li class="header-navigation-nav-links-list-item"><a href="/#experience">Experience</a></li>
+                        <li class="header-navigation-nav-links-list-item"><a href="/#projects">Work</a></li>
+                        <li class="header-navigation-nav-links-list-item"><a href="/#contact">Contact</a></li>
                     </ol>
                     <div class="header-navigation-nav-links-resume">
                         <a href="" class="resume">Resume</a>
@@ -31,7 +31,6 @@
         </header>
 
         <div class="main-section">
-            <nav class="left"></nav>
             <main>
                 <section class="intro">
                     <h1>Hi, my name is</h1>
@@ -40,12 +39,12 @@
                     <div class="description">
                         <p>I'm a software engineer based in Boston, MA specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.</p>
                     </div>
-                    <div class="get-in-touch">
+                    <div class="get-in-touch mouseEvents">
                         <a href="">Get In Touch</a>
                     </div>
                 </section>
 
-                <section class="about">
+                <section id="about" class="about">
                     <h3>About Me</h3>
                     <div class="about-split">
                         <div class="about-description">
@@ -72,7 +71,7 @@
                     </div>
                 </section>
 
-                <section class="experience">
+                <section id="experience" class="experience">
                     <h3>Where I've Worked</h3>
                     <div class="jobs">
                         <ul class="jobs-list">
@@ -100,30 +99,49 @@
                     </div>
                 </section>
 
-                <section class="projects">
+                <section id="projects" class="projects">
                     <h3>Projects</h3>
                     <div class="project">
                         <div class="image">
-                            asdf
+                            <a href="">
+                                <div class="project-image">
+                                    <img src="angular.png" alt="">
+                                </div>
+                            </a>
                         </div>
                         <div class="description">
-                            asd
+                            <h4>Featured project</h4>
+                            <h5>Project name</h5>
+                            <div class="details">
+                                <p>A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.</p>
+                            </div>
+                            <ul class="tools">
+                                <li>JS</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <div class="ref">
+                                <a href="">Github</a>
+                                <a href="">Website</a>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="contact">
+                <section id="contact" class="contact">
                     <h3>Get In Touch</h3>
                     <div class="desc">
                         <p>Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        <a href="mailto:mladenplaninicic@gmail.com">mladenplaninicic@gmail.com</a>
                     </div>
+                    <ul>
+                        <li><a href="https://github.com/mladenplaninicic" target="_black"><img src="github.png" class="github" alt=""></a></li>
+                        <li><a href=""><img src="linkedin.png" class="linkedin" alt=""></a></li>
+                    </ul>
                     <a href="">Mail me!</a>
                 </section>
             </main>
-            <aside class="right"></aside>
         </div>
-
-        <footer class="footer"></footer>
     </div>
 
     <script src="/particles/particles.js"></script>

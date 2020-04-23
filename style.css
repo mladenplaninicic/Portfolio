@@ -19,13 +19,13 @@ body {
 
 .header {
     display: flex;
-    /*position: fixed;*/
     top: 0;
     width: 100%;
     height: 100px;
     padding: 0 50px;
-    position: absolute;
-    z-index: 100;
+    position: fixed;
+    z-index: 1000;
+    transition: top 0.3s;
 }
 
 .header-navigation {
@@ -100,11 +100,13 @@ li>a:hover {
     position: absolute;
     z-index: 100;
     font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .intro{
     max-width: 1000px;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 150px 0px;
 }
 
@@ -156,7 +158,7 @@ li>a:hover {
 
 .about{
     max-width: 1000px;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 150px 0px;
 }
 
@@ -218,7 +220,7 @@ li>a:hover {
 
 .experience{
     max-width: 1000px;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 150px 0px;
 }
 
@@ -337,7 +339,7 @@ li>a:hover {
 
 .projects{
     max-width: 1000px;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 150px 0px;
 }
 
@@ -354,24 +356,97 @@ li>a:hover {
 
 .project > .image{
     width: 50%;
+    margin-top: 50px;
 }
 
 .project > .description{
     width: 50%;
 }
 
+.projects > .project > .image > a {
+    position: relative;
+    background-color: rgb(100, 255, 218);
+    border-radius: 4px;
+    overflow: hidden;
+}
 
+.project-image > img{
+    width: 400px;
+    height: 300px;
+    opacity: .8;
+}
+
+.project-image > img:hover{
+    width: 400px;
+    height: 300px;
+    opacity: 1;
+    background-color: transparent;
+}
+
+.project > .description{
+    text-align: right;
+}
+
+.project > .description > h4{
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(100, 255, 218);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+.project > .description > .details{
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(23, 42, 69);
+    color: rgb(168, 178, 209);
+    font-size: 18px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    padding: 25px;
+    border-radius: 3px;
+}
+.project > .description > .tools{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 25px 0px 10px;
+    list-style: none;
+}
+.project > .description > .tools > li{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    color: rgb(136, 146, 176);
+    margin-right: 20px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+}
+
+.project > .description > h5{
+    font-size: 28px;
+    color: rgb(204, 214, 246);
+    margin: 0px 0px 20px;
+    margin-top: 10px;
+}
 
 .contact{
     max-width: 1000px;
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 150px 0px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .contact > .desc {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    max-width: 700px;
 }
 
 .contact > h3{
@@ -389,23 +464,37 @@ li>a:hover {
     padding: 1rem 1em;
     border-radius: 3px;
     font-size: 15px;
+    width: 200px;
 }
 
-.left {
-    width: 8%;
+.contact > ul{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.contact > ul > li{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contact > ul > li > a > .linkedin{
+    width: 40px;
+    height: 30px;
+    margin-left: 7px;
+}
+.contact > .desc > a{
+    margin-top: 25px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.contact > .desc > a:hover{
+    color: rgb(100, 255, 218);
 }
 
 main {
     width: 84%;
-}
-
-.right {
-    width: 8%;
-}
-
-.footer {
-    position: absolute;
-    z-index: 100;
 }
 
 .resume {
@@ -440,5 +529,7 @@ canvas {
     background-size: cover;
     background-position: 50% 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow-y: scroll;
 }
+
