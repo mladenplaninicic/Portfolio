@@ -7,6 +7,7 @@
 html {
     background-color: rgb(10, 25, 47);
     color: rgb(136, 146, 176);
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -524,9 +525,7 @@ li>a:hover {
     transform: translateX(-2px);
 }
 
-.contact>ul>li:hover {
-
-}
+.contact>ul>li:hover {}
 
 .contact>ul>li>a>.linkedin {
     width: 40px;
@@ -568,7 +567,6 @@ main {
 
 canvas {
     display: block;
-    vertical-align: bottom;
 }
 
 #particles-js {
@@ -676,3 +674,122 @@ canvas {
     transform: scaleX(1);
 }
 */
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 0;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+#check {
+    display: none;
+}
+
+.active {
+    right: 0 !important;
+}
+
+@media (max-width: 1100px) {
+    .certifications>.certification {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 80px;
+    }
+    .angular {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 970px) {
+    .about-split {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-split>.about-photo-wrapper>.about-photo {
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .main-section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .projects>.project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .project>.description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    .header-navigation-nav-links {
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        background-color: rgb(23, 42, 69);
+        top: 0;
+        right: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all .5s;
+        align-items: center;
+    }
+    .header-navigation-nav-links-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-navigation-nav-links-resume>a {
+        padding: 15px 25px;
+    }
+    .header-navigation-nav-links-list-item {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 840px) {
+    .certifications>.certification {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 80px;
+    }
+    .angular {
+        margin-bottom: 20px;
+    }
+    .main-section {
+        margin-left: 120px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .project>.description {
+        margin-left: 80px;
+    }
+}
