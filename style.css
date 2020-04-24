@@ -793,3 +793,91 @@ canvas {
         margin-left: 80px;
     }
 }
+
+.one {
+    animation: fadeInTop 1s;
+}
+
+.two {
+    animation: fadeInTop 1.3s;
+}
+
+.three {
+    animation: fadeInTop 1.6s;
+}
+
+.four {
+    animation: fadeInTop 1.9s;
+}
+
+.resume {
+    animation: fadeInTop 2s;
+}
+
+.hi {
+    animation: fadeInBottom 1s;
+}
+
+.name {
+    animation: fadeInBottom 1.3s;
+}
+
+.love {
+    animation: fadeInBottom 1.6s;
+}
+
+.description {
+    animation: fadeInBottom 2s;
+}
+
+.get-in-touch {
+    animation: fadeInBottom 2s;
+}
+
+.logo {
+    animation: fadeInTop .8s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translatey(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
