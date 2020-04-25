@@ -154,6 +154,14 @@ li>a:hover {
     font-size: 15px;
 }
 
+.get-in-touch>a:hover {
+    background-color: rgba(100, 255, 218, 0.07);
+}
+
+.mail-me:hover{
+    background-color: rgba(100, 255, 218, 0.07);
+}
+
 .about {
     max-width: 1000px;
     min-height: 80vh;
@@ -458,7 +466,6 @@ li>a:hover {
 .project>.description>.tools>li {
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
     font-size: 13px;
-    /*color: rgb(136, 146, 176);*/
     color: rgb(100, 255, 218);
     margin-bottom: 7px;
     white-space: nowrap;
@@ -525,7 +532,10 @@ li>a:hover {
     transform: translateX(-2px);
 }
 
-.contact>ul>li:hover {}
+.contact>ul>li:hover {
+    transform: translateY(-5px);
+    transition: .3s ease-in-out;
+}
 
 .contact>ul>li>a>.linkedin {
     width: 40px;
@@ -562,8 +572,6 @@ main {
 .resume:hover {
     background-color: rgba(100, 255, 218, 0.07);
 }
-
-/* particles */
 
 canvas {
     display: block;
@@ -654,26 +662,6 @@ canvas {
     padding: 10px;
     text-align: center;
 }
-
-/*
-.intro>h3::before {
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    width: 20px;
-    background-color: #5EA6EE;
-    position: absolute;
-    transition: transform 300ms ease-in-out;
-    transform: scaleX(0);
-}
-
-.intro>h3:hover {
-    background-color: rgba(100, 255, 218, 0.07);
-    transform: scaleX(1);
-}
-*/
 
 .checkbtn {
     font-size: 30px;
