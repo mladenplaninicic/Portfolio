@@ -133,13 +133,17 @@ li>a:hover {
 }
 
 .description {
-    max-width: 500px;
+    max-width: 600px;
     line-height: 1.6;
 }
 
 .description>p {
     color: rgb(136, 146, 176);
     font-size: 18px;
+    margin-left: 3px;
+}
+
+.description>.bottom-space {
     margin: 0px 0px 60px 3px;
 }
 
