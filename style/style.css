@@ -350,7 +350,7 @@ li>a:hover {
 }
 
 .job-description>.time-period {
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-family: "Lucida Console", Courier, monospace;
     font-size: 13px;
     font-weight: normal;
     letter-spacing: 0.05em;
